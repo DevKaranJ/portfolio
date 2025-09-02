@@ -13,6 +13,8 @@ import MelodyVerse from "../../Assets/Projects/MelodyVerse.png"
 import TaskTracker from "../../Assets/Projects/TaskTracker.png"
 import BudgetApp from "../../Assets/Projects/BudgetApp.png"
 import Bookify from "../../Assets/Projects/Bookify.png"
+import AutoDocs from "../../Assets/Projects/AutoDocs.png"
+import Involex from "../../Assets/Projects/Involex.png"
 
 function Projects() {
   return (
@@ -26,6 +28,27 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={AutoDocs}
+              isBlog={false}
+              title="Auto-Docs"
+              description="It is an open-source, AI-powered documentation generator that automatically creates professional, multi-language documentation from codebases using GPT-4. It supports multiple output formats (Markdown, HTML, JSON) and provides both a sleek web demo and an easy-to-use CLI tool for developers. The project emphasizes user-friendliness, customization, and community collaboration, making it a valuable tool for developers seeking to streamline their documentation process."
+              ghLink="https://github.com/DevKaranJ/auto-docs"
+              demoLink="https://auto-docs-54hp.onrender.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Involex}
+              isBlog={false}
+              title="Involex"
+              description="It is a comprehensive invoicing application built with a focus on user experience and efficiency. The app allows users to create, manage, and send invoices seamlessly. Key features include customizable invoice templates, client management, and payment tracking. The project leverages modern web technologies to deliver a responsive and intuitive interface."
+              ghLink="https://github.com/DevKaranJ/involex"
+            />
+          </Col>
 
         <Col md={4} className="project-card">
             <ProjectCard
